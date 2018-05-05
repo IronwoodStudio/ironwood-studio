@@ -1,0 +1,73 @@
+@import 'layout';
+
+* {
+  box-sizing: border-box;
+}
+
+.btn {
+  border-radius: 24px;
+  min-width: 240px;
+}
+
+header.hero {
+  .site-title {
+    text-align: center;
+    font-size: 96px;
+    margin-bottom: 72px;
+  }
+  
+  .site-support {
+    font-size: 40px;
+    margin-bottom: 80px;
+  }
+}
+
+ul.projects {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  background: #333;
+  padding: 64px 0;
+  margin: 0;
+  margin-bottom: 64px;
+
+  li {
+    flex: 1 1;
+    background: #999;
+    height: 240px;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+
+    &:not(:first-child) {
+      margin-left: 8px;
+    }
+  }
+}
+
+.selected-skill {
+  img {
+    border-radius: 50%;
+    border: 1px solid #777;
+  }
+
+  .title-container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.skills {
+  margin-bottom: 64px;
+  
+  h6 {
+    font-weight: 700;
+  }
+}
+
+.cta {
+  background: #eee;
+  padding: 64px 0;
+}
