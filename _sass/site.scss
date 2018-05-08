@@ -9,13 +9,22 @@
   min-width: 240px;
 }
 
+#masthead-outlined {
+  padding: 0 0 4rem;
+  filter: none;
+  transition: all 2s linear;
+
+  &:hover {
+    filter: url(#pictureFilter);
+  }
+}
 header.hero {
   .site-title {
     text-align: center;
     font-size: 96px;
     margin-bottom: 72px;
   }
-  
+
   .site-support {
     font-size: 40px;
     margin-bottom: 80px;
@@ -61,7 +70,7 @@ ul.projects {
 
 .skills {
   margin-bottom: 64px;
-  
+
   h6 {
     font-weight: 700;
   }
@@ -70,4 +79,7 @@ ul.projects {
 .cta {
   background: #eee;
   padding: 64px 0;
+}
+.hero-image {
+  max-width: 600px;
 }
