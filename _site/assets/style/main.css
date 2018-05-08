@@ -82,3 +82,7 @@ ul.projects {
 .cta {
   background: #eee;
   padding: 64px 0; }
+
+body {
+  font-family: 'brandon grotesque', sans-serif;
+  font-weight: 400; }
