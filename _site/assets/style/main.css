@@ -43,15 +43,19 @@ body {
 
 .btn {
   border-radius: 24px;
-  min-width: 240px; }
+  min-width: 300px;
+  height: 2rem; }
 
-#masthead-outlined {
-  padding: 0 0 4rem;
+.container.grid-xl {
+  max-width: 1100px; }
+
+header.hero #masthead-outlined {
+  margin-bottom: 64px;
+  margin-top: 16px;
   filter: none;
   transition: all 2s linear; }
-  #masthead-outlined:hover {
+  header.hero #masthead-outlined:hover {
     filter: url(#pictureFilter); }
-
 header.hero .site-title {
   text-align: center;
   font-size: 96px;
@@ -59,40 +63,62 @@ header.hero .site-title {
 header.hero .site-support {
   font-size: 40px;
   margin-bottom: 80px; }
+header.hero .hero-image-container {
+  display: flex;
+  align-items: end; }
+  header.hero .hero-image-container .hero-image {
+    max-width: 100%;
+    display: block; }
 
 ul.projects {
   display: flex;
   flex-direction: row;
   list-style: none;
   background: #333;
-  padding: 64px 0;
+  padding: 48px 0;
   margin: 0;
   margin-bottom: 64px; }
   ul.projects li {
     flex: 1 1;
     background: #999;
-    height: 240px;
+    height: 320px;
+    max-width: 240px;
     margin: 0; }
+    ul.projects li a {
+      display: block;
+      height: 100%;
+      width: 100%;
+      background-size: cover;
+      background-position: center; }
     ul.projects li:not(:last-child) {
       margin-right: 8px; }
     ul.projects li:not(:first-child) {
       margin-left: 8px; }
 
-.selected-skill img {
+.featured-skill img {
   border-radius: 50%;
   border: 1px solid #777; }
-.selected-skill .title-container {
+.featured-skill .title-container {
   display: flex;
   align-items: center; }
 
 .skills {
   margin-bottom: 64px; }
   .skills h6 {
-    font-weight: 700; }
+    font-weight: 700;
+    margin-bottom: 16px; }
 
-.cta {
-  background: #eee;
+.article-main, .cta {
   padding: 64px 0; }
 
-.hero-image {
-  max-width: 600px; }
+.article-header, .cta {
+  background: #eee; }
+
+.article-header {
+  padding-top: 16px;
+  padding-bottom: 64px; }
+  .article-header .site-icon {
+    display: inline-block; }
+    .article-header .site-icon img {
+      border-radius: 50%;
+      border: 1px solid #777; }
