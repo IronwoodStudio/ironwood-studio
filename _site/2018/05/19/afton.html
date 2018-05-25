@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+  <link rel="stylesheet" href="/assets/style/main.css">
+  <script type="text/javascript" src="/assets/js/main.js"></script>
+  <script>
+    (function() {
+      /* Add this class to any elements you want to use to open Drift.
+       *
+       * Examples:
+       * - <a class="drift-open-chat">Questions? We're here to help!</a>
+       * - <button class="drift-open-chat">Chat now!</button>
+       *
+       * You can have any additional classes on those elements that you
+       * would ilke.
+       */
+      var DRIFT_CHAT_SELECTOR = '.drift-open-chat'
+      /* http://youmightnotneedjquery.com/#ready */
+      function ready(fn) {
+        if (document.readyState != 'loading') {
+          fn();
+        } else if (document.addEventListener) {
+          document.addEventListener('DOMContentLoaded', fn);
+        } else {
+          document.attachEvent('onreadystatechange', function() {
+            if (document.readyState != 'loading')
+              fn();
+          });
+        }
+      }
+      /* http://youmightnotneedjquery.com/#each */
+      function forEachElement(selector, fn) {
+        var elements = document.querySelectorAll(selector);
+        for (var i = 0; i < elements.length; i++)
+          fn(elements[i], i);
+      }
+      function openSidebar(driftApi, event) {
+        event.preventDefault();
+        driftApi.sidebar.open();
+        return false;
+      }
+      ready(function() {
+        drift.on('ready', function(api) {
+          var handleClick = openSidebar.bind(this, api)
+          forEachElement(DRIFT_CHAT_SELECTOR, function(el) {
+            el.addEventListener('click', handleClick);
+          });
+        });
+      });
+    })();
+  </script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="site-container">
+    <article>
+  <header class="article-header bg-gray">
+    <div class="container grid-lg">
+      <div class="columns">
+        <div class="column col-8 col-lg-12">
+          <a href="/" class="site-icon mb-4">
+            <img src="https://via.placeholder.com/32x32" alt="Placeholder">
+          </a>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column col-8 col-lg-12">
+          <h1>Afton Community Day</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <div class="container grid-lg">
+      <div class="columns">
+        <div class="column col-8 col-lg-12">
+          <p>Lorem ipsum dolor sit amet, nec natum latine at, nec choro pertinax id. Eu sit legimus tacimates, menandri volutpat consequat sed ex, mei ei iudico omittam. Sit et aeterno vidisse, at mei noluisse epicurei convenire. Te augue bonorum est. Sit ex utinam adolescens interesset, ut salutandi ocurreret usu. Paulo vitae dictas ei est, ex nam fabulas nominavi inimicus. Vim ei quem nostrum, est ad graeci utamur.</p>
+
+<p>In sea dicit appetere oporteat, debitis detraxit id eam. Vis et noster verear. Convenire reprimique percipitur sit an. Labores omittam atomorum sed ne. Nec aeterno delectus abhorreant no, his id eius error expetendis.</p>
+
+<p>Te justo facilis verterem nec, ut case numquam nec, velit aliquip ex cum. Eu vis wisi soluta copiosae, in fabulas conceptam his. Ut suavitate efficiendi sed. At soluta commodo pro, an est summo liber.</p>
+
+<p>Ea verterem similique qui, eam in exerci accusam. Id omnis persequeris pri, eu aperiam accusamus contentiones has. Ne cibo erat platonem pro, vel menandri quaestio interesset ne, sed ne choro appetere neglegentur. Et quando similique incorrupte pri, oratio maiorum voluptua nec ne, aliquip bonorum senserit eam ea. Modus tibique principes et vix, tractatos gloriatur pri an. Mea sumo liberavisse complectitur id, dico velit facilis per in.</p>
+
+<p>Ex utinam oportere intellegat vim, partem incorrupte et qui. Ei autem illud qui, tollit laoreet incorrupte ei his. Sensibus appellantur nec an, eu qui persius vivendum referrentur. Vim at nullam audiam ceteros, eam inermis appareat definitionem ne. Sea ullum dicam honestatis no, id mel amet congue dissentiet. Qui te iuvaret maiorum pericula, est impetus offendit volutpat eu.</p>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="cta bg-gray">
+    <div class="container grid-lg">
+      <div class="columns">
+        <div class="column col-8 col-lg-12">
+          <h3>Ready to get started?</h3>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column col-8 col-lg-12">
+          <h6 class="mb-4 text-gray">This is the supporting subhead.</h6>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column col-8 col-lg-12">
+          <p class="mb-4">Te justo facilis verterem nec, ut case numquam nec, velit aliquip ex cum.</p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column col-8 col-lg-12">
+          <button class="btn btn-primary drift-open-chat">Let's make it a success</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+  </div>
+</body>
+</html>
