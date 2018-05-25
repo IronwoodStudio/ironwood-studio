@@ -1,121 +1,56 @@
-.ml-3 {
-  margin-left: 16px; }
+.ml-3 { margin-left: 16px; }
 
-.ml-4 {
-  margin-left: 32px; }
+.ml-4 { margin-left: 32px; }
 
-.ml-5 {
-  margin-left: 48px; }
+.ml-5 { margin-left: 48px; }
 
-.mt-3 {
-  margin-top: 16px; }
+.mt-3 { margin-top: 16px; }
 
-.mt-4 {
-  margin-top: 32px; }
+.mt-4 { margin-top: 32px; }
 
-.mt-5 {
-  margin-top: 48px; }
+.mt-5 { margin-top: 48px; }
 
-.mb-3 {
-  margin-bottom: 16px; }
+.mb-3 { margin-bottom: 16px; }
 
-.mb-4 {
-  margin-bottom: 32px; }
+.mb-4 { margin-bottom: 32px; }
 
-.mb-5 {
-  margin-bottom: 48px; }
+.mb-5 { margin-bottom: 48px; }
 
-.mr-3 {
-  margin-right: 16px; }
+.mr-3 { margin-right: 16px; }
 
-.mr-4 {
-  margin-right: 32px; }
+.mr-4 { margin-right: 32px; }
 
-.mr-5 {
-  margin-right: 48px; }
+.mr-5 { margin-right: 48px; }
 
-* {
-  box-sizing: border-box; }
+* { box-sizing: border-box; }
 
-body {
-  font-family: 'brandon grotesque', sans-serif;
-  font-weight: 400; }
+body { font-family: 'brandon grotesque', sans-serif; font-weight: 400; }
 
-.btn {
-  border-radius: 24px;
-  min-width: 300px;
-  height: 2rem; }
+.btn { border-radius: 24px; min-width: 300px; height: 2rem; }
 
-.container.grid-xl {
-  max-width: 1100px; }
+.container.grid-xl { max-width: 1100px; }
 
-header.hero #masthead-outlined {
-  margin-bottom: 64px;
-  margin-top: 16px;
-  filter: none;
-  transition: all 2s linear; }
-  header.hero #masthead-outlined:hover {
-    filter: url(#pictureFilter); }
-header.hero .site-title {
-  text-align: center;
-  font-size: 96px;
-  margin-bottom: 72px; }
-header.hero .site-support {
-  font-size: 40px;
-  margin-bottom: 80px; }
-header.hero .hero-image-container {
-  display: flex;
-  align-items: end; }
-  header.hero .hero-image-container .hero-image {
-    max-width: 100%;
-    display: block; }
+header.hero #masthead-outlined { margin-bottom: 64px; margin-top: 16px; filter: none; transition: all 2s linear; }
+header.hero #masthead-outlined:hover { filter: url(#pictureFilter); }
+header.hero .site-title { text-align: center; font-size: 96px; margin-bottom: 72px; }
+header.hero .site-support { font-size: 40px; margin-bottom: 80px; }
+header.hero .hero-image-container { display: flex; align-items: end; }
+header.hero .hero-image-container .hero-image { max-width: 100%; display: block; }
 
-ul.projects {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  background: #333;
-  padding: 48px 0;
-  margin: 0;
-  margin-bottom: 64px; }
-  ul.projects li {
-    flex: 1 1;
-    background: #999;
-    height: 320px;
-    max-width: 240px;
-    margin: 0; }
-    ul.projects li a {
-      display: block;
-      height: 100%;
-      width: 100%;
-      background-size: cover;
-      background-position: center; }
-    ul.projects li:not(:last-child) {
-      margin-right: 8px; }
-    ul.projects li:not(:first-child) {
-      margin-left: 8px; }
+ul.projects { display: flex; flex-direction: row; list-style: none; background: #333; padding: 48px 0; margin: 0; margin-bottom: 64px; }
+ul.projects li { flex: 1 1; background: #999; height: 320px; max-width: 240px; margin: 0; }
+ul.projects li a { display: block; height: 100%; width: 100%; background-size: cover; background-position: center; }
+ul.projects li:not(:last-child) { margin-right: 8px; }
+ul.projects li:not(:first-child) { margin-left: 8px; }
 
-.featured-skill img {
-  border-radius: 50%;
-  border: 1px solid #777; }
-.featured-skill .title-container {
-  display: flex;
-  align-items: center; }
+.featured-skill img { border-radius: 50%; border: 1px solid #777; }
+.featured-skill .title-container { display: flex; align-items: center; }
 
-.skills {
-  margin-bottom: 64px; }
-  .skills h6 {
-    font-weight: 700;
-    margin-bottom: 16px; }
+.skills { margin-bottom: 64px; }
+.skills h6 { font-weight: 700; margin-bottom: 16px; }
 
-.article-main, .cta {
-  padding: 64px 0; }
+.article-main, .cta { padding: 64px 0; }
 
-.article-header {
-  padding-top: 16px;
-  padding-bottom: 64px; }
-  .article-header .site-icon {
-    display: inline-block; }
-    .article-header .site-icon img {
-      border-radius: 50%;
-      border: 1px solid #777; }
+.article-header { padding-top: 16px; padding-bottom: 64px; }
+.article-header .site-icon { display: inline-block; }
+.article-header .site-icon img { border-radius: 50%; border: 1px solid #777; }
