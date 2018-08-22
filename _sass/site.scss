@@ -1,40 +1,71 @@
 @import 'layout';
 
+@mixin box-shadow( $horiz : 0 , $vert : 0 , $blur : 24px , $spread : 0px , $color : #555555 ){
+  -webkit-box-shadow: $horiz $vert $blur $spread $color;
+  -moz-box-shadow: $horiz $vert $blur $spread $color;
+  box-shadow: $horiz $vert $blur $spread $color;
+}
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'brandon grotesque', sans-serif;
+  font-family: "soleil", sans-serif;
   font-weight: 400;
+  background: #f8f8f8;
 }
-
-.btn {
+#site-container {
+  max-width: 1440px;
+  margin:auto;
+  border-left: 2px solid #f3f3f3;
+  border-right: 2px solid #f3f3f3;
+  background: #fff;
+  @include box-shadow($blur:72px, $color:#ccc);
+}
+.nav-link {
   border-radius: 24px;
-  min-width: 300px;
-  height: 2rem;
+  margin:0rem 2rem;
+  :focus {
+    border:none;
+  }
+  :active {
+    font-weight: bold;
+    text-decoration: non
+  }
 }
 
 .container.grid-xl {
   max-width: 1100px;
 }
+header.navbar{
+  height: 5rem;
+  border-bottom: 2px solid #f8f8f8;
+  padding-left: 100px;
+  padding-right: 100px;
+}
 
 header.hero {
-  #masthead-outlined {
-    margin-bottom: 64px;
-    margin-top: 16px;
-    filter: none;
-    transition: all 2s linear;
-  
-    &:hover {
-      filter: url(#pictureFilter);
-    }
+margin-top: 4rem;
+margin-bottom: 3rem;
   }
+.site-icon {
+  display: inline-block;
 
-  .site-title {
-    text-align: center;
-    font-size: 96px;
-    margin-bottom: 72px;
+  img {
+    border-radius: 50%;
+    border: 1px solid #777;
+  }
+}
+.case-study-title {
+  text-align: left;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  line-height: 0.9;
+  letter-spacing: -1px;
+
+}
+  .slide-title {
+    height:8rem;
   }
 
   .site-support {
@@ -51,7 +82,6 @@ header.hero {
       display: block;
     }
   }
-}
 
 ul.projects {
   display: flex;
@@ -115,13 +145,26 @@ ul.projects {
 .article-header {
   padding-top: 16px;
   padding-bottom: 64px;
-
-  .site-icon {
-    display: inline-block;
-
-    img {
-      border-radius: 50%;
-      border: 1px solid #777;
-    }
-  }
+}
+.project-slide {
+  background: gray;
+  background-image:url(../img/featured-slide-APM.jpg);
+  height: 30rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  margin-bottom:4rem;
+}
+.feature-flag {
+  height:8rem;
+  border-left:2px solid #ccc;
+  position: absolute;
+}
+.feature-number {
+  font-size: 2rem;
+  position: absolute;
+  top: -10px;
+  left: 4px;
 }
