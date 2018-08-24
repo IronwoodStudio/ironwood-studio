@@ -64,7 +64,7 @@ ul.projects li:not(:first-child) { margin-left: 8px; }
 
 .article-main, .cta { padding: 64px 0; }
 
-.article-header { padding-top: 16px; padding-bottom: 64px; }
+.article-header { padding-top: 4rem; padding-bottom: 6rem; height: 20rem; background-position: center; background-repeat: no-repeat; background-size: cover; }
 
 .project-slide { background: gray; background-image: url(../img/featured-slide-APM.jpg); height: 30rem; background-position: center; background-repeat: no-repeat; background-size: cover; width: 100%; display: flex; margin-bottom: 4rem; }
 

@@ -2,7 +2,7 @@
 layout: post
 title: "APM Paving"
 date: 2018-05-20
-hero-image: ""
+hero-image: "featured-slide-APM.jpg"
 thumbnail-image: "caseStudy-thumb-APM.jpg"
 ---
 

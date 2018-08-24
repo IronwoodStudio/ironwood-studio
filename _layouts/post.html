@@ -1,17 +1,10 @@
 ---
 layout: default
 ---
-
+{% include navbar.html %}
 <article>
-  <header class="article-header bg-gray">
+  <header class="article-header bg-gray" style="background-image:url({{site.url}}/assets/img/featured-slide-APM.jpg)">
     <div class="container grid-lg">
-      <div class="columns">
-        <div class="column col-8 col-lg-12">
-          <a href="/" class="site-icon mb-4">
-            <img src="https://via.placeholder.com/32x32" alt="Placeholder">
-          </a>
-        </div>
-      </div>
       <div class="columns">
         <div class="column col-8 col-lg-12">
           <h1>{{page.title}}</h1>
@@ -23,8 +16,12 @@ layout: default
   <main class="article-main">
     <div class="container grid-lg">
       <div class="columns">
-        <div class="column col-8 col-lg-12">
+        <div class="column col-8 col-mr-auto">
           {{content}}
+        </div>
+        <div class="column col-3">
+            <h5>Brand Identity</h5>
+            <p>Te justo facilis verterem nec, ut case numquam nec, velit aliquip ex cum. Eu vis wisi soluta copiosae, in fabulas conceptam his.</p>
         </div>
       </div>
     </div>

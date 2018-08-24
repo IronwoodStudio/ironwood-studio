@@ -143,8 +143,12 @@ ul.projects {
 }
 
 .article-header {
-  padding-top: 16px;
-  padding-bottom: 64px;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  height: 20rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .project-slide {
   background: gray;

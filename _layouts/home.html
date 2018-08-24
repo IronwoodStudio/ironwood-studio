@@ -1,19 +1,7 @@
 ---
 layout: default
 ---
-<header class="navbar">
-  <section class="navbar-section">
-    <a href="#" class="site-icon mr-2">
-      <img src="https://via.placeholder.com/32x32" alt="Placeholder">
-    </a>
-    <a href="#" class="mr-2">Ironwood Studio</a>
-  </section>
-  <section class="navbar-section">
-    <a href="#" class="nav-link">About</a>
-    <a href="#" class="nav-link">Case Studies</a>
-    <a href="#" class="nav-link">Contact</a>
-  </section>
-</header>
+{% include navbar.html %}
 <header class="hero">
   <div class="container grid-lg">
     <div class="columns">
@@ -51,7 +39,7 @@ layout: default
         <img src="https://via.placeholder.com/200x200" alt="Placeholder">
       </div>
       <div class="column col-6 title-container">
-        <h3>Salesforce Marketing Cloud Email Specialist</h3>
+        <h3>Descriptions needed.</h3>
       </div>
     </div>
   </div>
@@ -69,7 +57,7 @@ layout: default
         <p>Te justo facilis verterem nec, ut case numquam nec, velit aliquip ex cum. Eu vis wisi soluta copiosae, in fabulas conceptam his.</p>
       </div>
       <div class="column col-4 col-xs-12 col-lg-6">
-        <h6>Salesforce Marketing Cloud Email Specialist</h6>
+        <h6>Salesforce Marketing Cloud</h6>
         <p>Te justo facilis verterem nec, ut case numquam nec, velit aliquip ex cum. Eu vis wisi soluta copiosae, in fabulas conceptam his.</p>
       </div>
       <div class="column col-4 col-xs-12 col-lg-6">
@@ -81,5 +69,16 @@ layout: default
         <p>Te justo facilis verterem nec, ut case numquam nec, velit aliquip ex cum. Eu vis wisi soluta copiosae, in fabulas conceptam his.</p>
       </div>
     </div>
+  </div>
+</div>
+<div class="columns">
+  <div class="column col-6">
+    <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+    </ul>
   </div>
 </div>
