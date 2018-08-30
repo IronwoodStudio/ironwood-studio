@@ -66,8 +66,13 @@ ul.projects li:not(:first-child) { margin-left: 8px; }
 
 .article-header { padding-top: 4rem; padding-bottom: 6rem; height: 20rem; background-position: center; background-repeat: no-repeat; background-size: cover; }
 
-.project-slide { background: gray; background-image: url(../img/featured-slide-Afton.jpg); height: 30rem; background-position: center; background-repeat: no-repeat; background-size: cover; width: 100%; display: flex; margin-bottom: 4rem; }
+.project-slide { background: gray; background-image: url(../img/featured-slide-CB.jpg); height: 30rem; background-position: center; background-repeat: no-repeat; background-size: cover; width: 100%; display: flex; margin-bottom: 4rem; }
 
 .feature-flag { height: 8rem; border-left: 2px solid #ccc; position: absolute; }
 
 .feature-number { font-size: 2rem; position: absolute; top: -10px; left: 4px; }
+
+footer { border-top: 2px solid #f8f8f8; padding-top: 4vw; padding-bottom: 4vw; }
+footer .footer-icon-mark { width: 80px; }
+
+.sub-footer { padding-top: 2vw; padding-bottom: 2.25vw; border-top: 2px solid #f8f8f8; padding-left: 100px; padding-right: 100px; color: #ccc; }
