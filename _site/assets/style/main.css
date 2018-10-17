@@ -1691,8 +1691,8 @@ header.hero { margin-top: 3rem; margin-bottom: 5rem; }
 .site-icon img { max-width: 200px; }
 
 .case-study-title { text-align: left; font-size: 1.5rem; margin-bottom: 1rem; line-height: 0.9; letter-spacing: -1px; }
-@media (min-width: 768px) and (max-width: 1023px) { .case-study-title { font-size: 2.5rem; } }
-@media (min-width: 1024px) { .case-study-title { font-size: 3rem; } }
+@media (min-width: 768px) and (max-width: 1023px) { .case-study-title { font-size: 2rem; } }
+@media (min-width: 1024px) { .case-study-title { font-size: 2.25rem; } }
 
 .slide-title { height: 8rem; }
 
