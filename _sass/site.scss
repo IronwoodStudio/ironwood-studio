@@ -1,4 +1,5 @@
 @import 'layout';
+@import "../node_modules/spectre.css/src/spectre";
 
 @mixin box-shadow( $horiz : 0 , $vert : 0 , $blur : 24px , $spread : 0px , $color : #555555 ){
   -webkit-box-shadow: $horiz $vert $blur $spread $color;
@@ -22,6 +23,13 @@ body {
   background: #fff;
   @include box-shadow($blur:72px, $color:#ccc);
 }
+.container {
+  padding: 0 1.5rem 0;
+  @include media-sm {
+    padding-left:2rem;
+    padding-right:2rem;
+  }
+}
 .nav-link {
   border-radius: 24px;
   margin:0rem 2rem;
@@ -40,13 +48,21 @@ body {
 header.navbar{
   height: 5rem;
   border-bottom: 2px solid #f8f8f8;
-  padding-left: 100px;
-  padding-right: 100px;
+  // @include media-lg {
+  //   padding-left: 100px;
+  //   padding-right: 100px;
+  // }
+  // @include media-md {
+  //   padding-left: 3rem;
+  //   padding-right: 3rem;
+  // }
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 header.hero {
-margin-top: 4rem;
-margin-bottom: 3rem;
+margin-top: 3rem;
+margin-bottom: 5rem;
   }
 .site-icon {
   display: inline-block;
@@ -59,11 +75,16 @@ margin-bottom: 3rem;
 }
 .case-study-title {
   text-align: left;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
   line-height: 0.9;
   letter-spacing: -1px;
-
+  @include media-md {
+    font-size: 2.5rem;
+  }
+  @include media-lg {
+    font-size: 3rem;
+  }
 }
   .slide-title {
     height:8rem;
@@ -154,18 +175,26 @@ ul.projects {
 .project-slide {
   background: gray;
   background-image:url(../img/featured-slide-CB.jpg);
-  height: 30rem;
-  background-position: center;
+  height: 18rem;
+  @include media-md {
+    height: 24rem;
+  }
+  @include media-lg {
+    height: 30rem;
+  }
+  background-position: bottom left;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   display: flex;
   margin-bottom:4rem;
+
 }
 .feature-flag {
   height:8rem;
   border-left:2px solid #ccc;
   position: absolute;
+  margin-top:3rem;
 }
 .feature-number {
   font-size: 2rem;
