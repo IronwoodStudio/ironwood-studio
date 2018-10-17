@@ -89,6 +89,15 @@ margin-bottom: 5rem;
   .slide-title {
     height:8rem;
   }
+  .hero-title {
+    font-size: 1.5rem;
+    @include media-md {
+      font-size: 1.75rem;
+    }
+    @include media-lg {
+      font-size: 2.25rem;
+    }
+  }
 
   .site-support {
     font-size: 40px;
@@ -205,17 +214,21 @@ ul.projects {
 footer {
   border-top: 2px solid #f8f8f8;
   padding-top: 4vw;
-  padding-bottom: 4vw;
+  padding-bottom: 1vw;
   .footer-icon-mark {
-    width: 80px;
+    position: relative;
+    margin:auto;
+    width: 48px;
+    @include media-lg {
+      width: 80px;
+    }
   }
 }
 .sub-footer {
   padding-top: 2vw;
   padding-bottom: 2.25vw;
   border-top: 2px solid #f8f8f8;
-  padding-left: 100px;
-  padding-right: 100px;
+  text-align: center;
   color: #ccc;
 
 }
