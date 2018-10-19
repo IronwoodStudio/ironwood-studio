@@ -1,5 +1,6 @@
 @import 'layout';
 @import "../node_modules/spectre.css/src/spectre";
+@import "../node_modules/spectre.css/src/spectre-icons";
 
 @mixin box-shadow( $horiz : 0 , $vert : 0 , $blur : 24px , $spread : 0px , $color : #555555 ){
   -webkit-box-shadow: $horiz $vert $blur $spread $color;
